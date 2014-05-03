@@ -1,0 +1,16 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 0px 10%;
+}
+
+section {
+    padding: 10px;
+}
+
+.loading-indicators {
+    background: #000;
+}
+
+.loading-indicators h2 {
+    color: fff;
+}
