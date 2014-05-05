@@ -1,0 +1,39 @@
+.win-metro-loading-indicator {
+    width: 100%;
+    position: relative;
+    height: 4px;
+    overflow: hidden;
+}
+
+.win-metro-loading-indicator .tick {
+    border: 2px solid #ff0;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    animation: win-metro-li-tick-iteration 3s infinite cubic-bezier(0.350, 1.000, 0.650, 0.000);
+    -webkit-animation: win-metro-li-tick-iteration 3s infinite cubic-bezier(0.350, 1.000, 0.650, 0.000);
+}
+
+.win-metro-loading-indicator .tick:nth-child(2) {
+  -webkit-animation-delay: 100ms;
+}
+.win-metro-loading-indicator .tick:nth-child(3) {
+  -webkit-animation-delay: 200ms;
+}
+.win-metro-loading-indicator .tick:nth-child(4) {
+  -webkit-animation-delay: 300ms;
+}
+.win-metro-loading-indicator .tick:nth-child(5) {
+  -webkit-animation-delay: 400ms;
+}
+
+@-webkit-keyframes win-metro-li-tick-iteration {
+  0% { left: 0px; }
+
+  100% { left: 100%; }
+}
+@keyframes win-metro-li-tick-iteration {
+  0% { left: 0px; }
+
+  100% { left: 100%; }
+}
