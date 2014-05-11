@@ -15,25 +15,29 @@
 }
 
 .win-metro-loading-indicator .tick:nth-child(2) {
-  -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
+    -webkit-animation-delay: 100ms;
 }
 .win-metro-loading-indicator .tick:nth-child(3) {
-  -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
 }
 .win-metro-loading-indicator .tick:nth-child(4) {
-  -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+    -webkit-animation-delay: 300ms;
 }
 .win-metro-loading-indicator .tick:nth-child(5) {
-  -webkit-animation-delay: 400ms;
+    animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
 }
 
 @-webkit-keyframes win-metro-li-tick-iteration {
-  0% { left: 0px; }
+    0% { left: 0px; }
 
-  100% { left: 100%; }
+    100% { left: 100%; }
 }
 @keyframes win-metro-li-tick-iteration {
-  0% { left: 0px; }
+    0% { left: 0px; }
 
-  100% { left: 100%; }
+    100% { left: 100%; }
 }
