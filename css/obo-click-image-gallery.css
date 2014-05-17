@@ -1,0 +1,51 @@
+.obo-click-image-gallery {
+    position: relative;
+}
+
+.obo-click-image-gallery .gallery-item {
+    display: inline-block;
+    list-style: none;
+    width: 50px;
+    height: 70px;
+    box-shadow: 0 0 5px #333;
+    background: #fff;
+    vertical-align: middle;
+    font-size: 0;
+    transition: transform 300ms ease;
+    -webkit-transition:-webkit-transform 300ms ease;
+}
+
+.obo-click-image-gallery .gallery-item:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.obo-click-image-gallery .gallery-item .thumb {
+    max-width: 100%;
+    max-height: 100%; 
+    vertical-align: middle;
+}
+
+.obo-click-image-gallery .gallery-item .preview {
+    display: none;
+    max-width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+.obo-click-image-gallery .gallery-item:focus {
+    outline: none;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+}
+
+.obo-click-image-gallery .gallery-item:focus .thumb {
+    opacity: 0.4;
+}
+
+.obo-click-image-gallery .gallery-item:focus .preview {
+    display: block;
+}
