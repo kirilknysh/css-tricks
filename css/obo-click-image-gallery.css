@@ -1,5 +1,6 @@
 .obo-click-image-gallery {
     position: relative;
+    height: 380px;
 }
 
 .obo-click-image-gallery .gallery-item {
@@ -39,6 +40,7 @@
 .obo-click-image-gallery .gallery-item .preview {
     display: none;
     max-width: 300px;
+    max-height: 300px;
     position: absolute;
     top: 80px;
     left: 0px;
