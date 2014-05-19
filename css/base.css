@@ -1,6 +1,7 @@
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     padding: 0px 10%;
+    color: #333;
 }
 
 h2 {
@@ -10,7 +11,14 @@ h2 {
 
 section {
     padding: 5px 15px;
+}
+
+.loading-indicators section {
     box-shadow: 0 5px 5px -5px #fff, 0 -5px 5px -5px #fff;
+}
+
+.img-galleries section {
+    box-shadow: 0 5px 5px -5px #000, 0 -5px 5px -5px #000;
 }
 
 .asset {
@@ -21,6 +29,6 @@ section {
     background: #000;
 }
 
-.loading-indicators h2, .asset h3 {
+.loading-indicators h2, .loading-indicators h3 {
     color: fff;
 }
