@@ -1,0 +1,65 @@
+.linear-overflow-loading-indicator {
+    height: 3px;
+    position: relative;
+}
+
+.linear-overflow-loading-indicator .line {
+    width: 0;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    animation: linear-overflow-li-line-iteration 3750ms infinite linear;
+    -webkit-animation: linear-overflow-li-line-iteration 3750ms infinite linear;
+}
+
+.linear-overflow-loading-indicator .line:nth-child(2) {
+    animation-delay: 750ms;
+    -webkit-animation-delay: 750ms;
+}
+.linear-overflow-loading-indicator .line:nth-child(3) {
+    animation-delay: 1500ms;
+    -webkit-animation-delay: 1500ms;
+}
+.linear-overflow-loading-indicator .line:nth-child(4) {
+    animation-delay: 2250ms;
+    -webkit-animation-delay: 2250ms;
+}
+.linear-overflow-loading-indicator .line:nth-child(5) {
+    animation-delay: 3000ms;
+    -webkit-animation-delay: 3000ms;
+}
+
+.linear-overflow-loading-indicator .line.red {
+    background: #f00;
+}
+.linear-overflow-loading-indicator .line.blue {
+    background: #00f;
+}
+.linear-overflow-loading-indicator .line.green {
+    background: #0f0;
+}
+.linear-overflow-loading-indicator .line.yellow {
+    background: #ff0;
+}
+.linear-overflow-loading-indicator .line.purple {
+    background: #f0f;
+}
+
+@-webkit-keyframes linear-overflow-li-line-iteration {
+    0% { width: 0; z-index: 2; }
+    21% { z-index: 1; }
+    27% { width: 100%; z-index: 0; }
+    99% { width: 100%; }
+    100 { width: 100%; }
+}
+
+@keyframes linear-overflow-li-line-iteration {
+    0% { width: 0; z-index: 2; }
+    21% { z-index: 1; }
+    27% { width: 100%; z-index: 0; }
+    99% { width: 100%; }
+    100% { width: 100%; }
+}
