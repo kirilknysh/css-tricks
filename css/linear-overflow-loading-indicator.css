@@ -11,25 +11,25 @@
     left: 0;
     right: 0;
     z-index: 0;
-    animation: linear-overflow-li-line-iteration 3750ms infinite linear;
-    -webkit-animation: linear-overflow-li-line-iteration 3750ms infinite linear;
+    animation: linear-overflow-li-line-iteration 4s infinite linear;
+    -webkit-animation: linear-overflow-li-line-iteration 4s infinite linear;
 }
 
 .linear-overflow-loading-indicator .line:nth-child(2) {
-    animation-delay: 750ms;
-    -webkit-animation-delay: 750ms;
+    animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
 }
 .linear-overflow-loading-indicator .line:nth-child(3) {
-    animation-delay: 1500ms;
-    -webkit-animation-delay: 1500ms;
+    animation-delay: 1600ms;
+    -webkit-animation-delay: 1600ms;
 }
 .linear-overflow-loading-indicator .line:nth-child(4) {
-    animation-delay: 2250ms;
-    -webkit-animation-delay: 2250ms;
+    animation-delay: 2400ms;
+    -webkit-animation-delay: 2400ms;
 }
 .linear-overflow-loading-indicator .line:nth-child(5) {
-    animation-delay: 3000ms;
-    -webkit-animation-delay: 3000ms;
+    animation-delay: 3200ms;
+    -webkit-animation-delay: 3200ms;
 }
 
 .linear-overflow-loading-indicator .line.red {
@@ -50,16 +50,28 @@
 
 @-webkit-keyframes linear-overflow-li-line-iteration {
     0% { width: 0; z-index: 2; }
-    21% { z-index: 1; }
-    27% { width: 100%; z-index: 0; }
-    99% { width: 100%; }
-    100 { width: 100%; }
+    20% { z-index: 1; }
+    25% { width: 100%; }
+    45% { z-index: 0; }
+    100% { width: 100%; }
 }
 
 @keyframes linear-overflow-li-line-iteration {
     0% { width: 0; z-index: 2; }
-    21% { z-index: 1; }
-    27% { width: 100%; z-index: 0; }
-    99% { width: 100%; }
+    20% { z-index: 1; }
+    25% { width: 100%; }
+    45% { z-index: 0; }
     100% { width: 100%; }
 }
+
+
+
+x - anim
+y - delay mulplier
+D - duration
+
+5x - 5*y*x = D
+
+x = 1
+y = 0.2
+D = 4
