@@ -1,6 +1,6 @@
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    padding: 0px 10%;
+    padding: 0px 10vw;
     color: #333;
 }
 
@@ -31,4 +31,34 @@ section {
 
 .loading-indicators h2, .loading-indicators h3 {
     color: fff;
+}
+
+.fork-me-conatiner {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+}
+
+.fork-me-conatiner .fork-me-link {
+    text-decoration: none;
+    background: #090;
+    color: #fff;
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 80%;
+    top: 4vw;
+    line-height: 2vw;
+    width: 20vw;
+    left: -5vw;
+    box-shadow: 0 0 7px #000;
+    text-shadow: 0px 0px 7px #000;
+    outline: 2px dotted rgba(255, 255, 255, 0.4);
+    outline-offset: -2px;
+    box-sizing: content-box;
+    -webkit-transform: rotateZ(45deg) translateY(-1.3vw);
+    transform: rotateZ(45deg) translateY(-1.3vw);
 }
