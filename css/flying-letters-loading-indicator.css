@@ -1,0 +1,77 @@
+.flying-letters-loading-indicator {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+}
+
+.flying-letters-loading-indicator .symbol {
+    display: inline-block;
+    margin: 0px 3px;
+    -webkit-animation: flying-letter-iteration 3s infinite linear;
+    animation: flying-letter-iteration 3s infinite linear;
+}
+
+.flying-letters-loading-indicator .symbol:nth-child(2) {
+    animation-delay: 100ms;
+    -webkit-animation-delay: 100ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(3) {
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(4) {
+    animation-delay: 300ms;
+    -webkit-animation-delay: 300ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(5) {
+    animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(6) {
+    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(7) {
+    animation-delay: 600ms;
+    -webkit-animation-delay: 600ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(8) {
+    animation-delay: 700ms;
+    -webkit-animation-delay: 700ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(9) {
+    animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
+}
+.flying-letters-loading-indicator .symbol:nth-child(10) {
+    animation-delay: 900ms;
+    -webkit-animation-delay: 900ms;
+}
+
+@-webkit-keyframes flying-letter-iteration {
+    0% { -webkit-transform: translateZ(101px); }
+
+    20% { -webkit-transform: translateZ(0px); }
+
+    60% { -webkit-transform: translateZ(0px); }
+
+    80% { -webkit-transform: translateZ(101px); }
+
+    100% { -webkit-transform: translateZ(101px); }
+}
+
+@keyframes flying-letter-iteration {
+    0% { transform: translateZ(101px); }
+
+    20% { transform: translateZ(0px); }
+
+    60% { transform: translateZ(0px); }
+
+    80% { transform: translateZ(101px); }
+
+    100% { transform: translateZ(101px); }
+}
