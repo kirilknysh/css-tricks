@@ -63,15 +63,3 @@
     45% { z-index: 0; }
     100% { width: 100%; }
 }
-
-
-
-x - anim
-y - delay mulplier
-D - duration
-
-5x - 5*y*x = D
-
-x = 1
-y = 0.2
-D = 4
