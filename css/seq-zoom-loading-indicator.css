@@ -13,7 +13,7 @@
     border: 1px solid rgba(0, 20, 60, 0.8);
     box-shadow: 0px 0px 9px 0px rgba(0, 127, 173, 0);
     animation: seq-zoom-li-tick-iteration 3s infinite;
-    -webkit-animation: seq-zoom-li-tick-iteration 3s infinite;;
+    -webkit-animation: seq-zoom-li-tick-iteration 3s infinite;
 }
 
 .seq-zoom-loading-indicator .tick:nth-child(2) {
