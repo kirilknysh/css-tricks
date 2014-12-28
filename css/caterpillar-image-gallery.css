@@ -1,0 +1,56 @@
+.caterpillar-image-gallery {
+	font-size: 0px;
+	margin: 10px 0px;
+}
+
+.caterpillar-image-gallery .gallery-item {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	vertical-align: top;
+	background: #000;
+	transition: transform 100ms linear, transform-origin 100ms linear;
+	-webkit-transition: -webkit-transform 100ms linear, -webkit-transform-origin 100ms linear;
+	transform: perspective(400px) scale(1);
+	-webkit-transform: perspective(400px) scale(1);
+	transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+}
+.caterpillar-image-gallery .gallery-item:before {
+	content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.caterpillar-image-gallery .gallery-item .preview {
+	max-width: 90%;
+	max-height: 90%;
+	vertical-align: middle;
+}
+
+.caterpillar-image-gallery .gallery-item:hover {
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+.caterpillar-image-gallery .gallery-item:hover + .gallery-item {
+	transform: perspective(400px) rotateY(41deg);
+	-webkit-transform: perspective(400px) rotateY(41deg);
+}
+
+/*
+ * As soon as there will be a selector for the previous sibling element - 
+ * an appropriate animation has to be defined here
+
+.caterpillar-image-gallery .gallery-item:hover ??? .gallery-item {
+	transform: perspective(400px) rotateY(-41deg);
+	-webkit-transform: perspective(400px) rotateY(-41deg);
+	transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+}
+
+ */
